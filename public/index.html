@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+        <!-- <video class="absolute opacity-90 h-100vw w-100vw" autoplay loop plays-inline>
+            <source src="/vecteezy_clouds-cartoon-moving-animated-background-4k_10887770_232.mp4" type="video/mp4">
+        </video> -->
+    <div class=" bg-cover flex items-center justify-center">
+        <video class="fixed opacity-90 min-w-full min-h-full " autoplay loop muted plays-inline>
+            <source src="./vecteezy_clouds-cartoon-moving-animated-background-4k_10887770_232.mp4" type="video/mp4">
+        </video>
+        <div className="card" class=" opacity-90 z-10 w-[50%] max-w-400px bg-gradient-to-b from-black to-blue-500  my-[40px] mx-auto rounded-[20px] px-9 py-12 text-center ">
+            <div className="search" class=" w-[100%] flex items-center justify-between ">
+                <input id="input-text" class=" rounded-[30px] border-0 outline-0 bg-gray-300  mr-4 py-2 px-6 h-[60px] flex-1 text-gray-600 text-[18px] " type="text" placeholder="enter city name" spellcheck="false">
+                <button id="btn" class="bg-white border-0 rounded-[30px] w-[60px] h-[60px] cursor-pointer"><img class="h-6 w-5 mx-auto my-auto" src="./images/search.png" alt=""></button>
+            </div>
+            <div className="weather" class="">
+                <img id="weather-icon" class=" w-[80px] mt-[30px] mb-[30px] mx-auto" src="./images/rain.png" alt="">
+                <h1 id="temp" class="text-[70px] font-[500] text-white  ">Temperature in ℃</h1>
+                <h2 id="city" class="text-[45px] font-[400] text-white -mt-[10px]">City Name</h2>
+                <div className="details" class="flex items-center justify-between px-[20px] py-[0px] mt-[10px]">
+                    <div class="col1 flex items-center text-left">
+                        <img class="mx-auto my-[10px] w-[40px] mr-[10px]" src="./images/humidity.png" alt="">
+                        <div>
+                            <p id="humidity" class="text-[30px] text-white -mt-[10px] -mb-[5px]">0% </p>
+                            <p class="text-white">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col2 flex items-center text-left">
+                        <img class="mx-auto my-[10px] w-[40px] mr-[10px]" src="./images/wind.png" alt="">
+                        <div class="text-white">
+                            <p id="wind-speed" class="text-[28px] -mt-[10px] -mb-[5px]">km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="weather-type" class="mt-[20px] mb-[10px] mx-auto text-white">
+                <h1 class="text-[20px] font-bold">Weather Type</h1>
+                <!-- <h2 id="local_time" class="text-[10px]" >Local Time</h2> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+</html>
